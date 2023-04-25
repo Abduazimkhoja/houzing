@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "icons";
+    src: url("./icons.eot?1dd437c8dd08949840ef355e59c36cac#iefix") format("embedded-opentype"),
+url("./icons.woff2?1dd437c8dd08949840ef355e59c36cac") format("woff2"),
+url("./icons.woff?1dd437c8dd08949840ef355e59c36cac") format("woff");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apartment:before {
+    content: "\f101";
+}
+.icon-arrow:before {
+    content: "\f102";
+}
+.icon-bed:before {
+    content: "\f103";
+}
+.icon-calculator:before {
+    content: "\f104";
+}
+.icon-car:before {
+    content: "\f105";
+}
+.icon-discord:before {
+    content: "\f106";
+}
+.icon-email:before {
+    content: "\f107";
+}
+.icon-facebook:before {
+    content: "\f108";
+}
+.icon-filter:before {
+    content: "\f109";
+}
+.icon-Group:before {
+    content: "\f10a";
+}
+.icon-home:before {
+    content: "\f10b";
+}
+.icon-house:before {
+    content: "\f10c";
+}
+.icon-houzing:before {
+    content: "\f10d";
+}
+.icon-in:before {
+    content: "\f10e";
+}
+.icon-instagram:before {
+    content: "\f10f";
+}
+.icon-loupe:before {
+    content: "\f110";
+}
+.icon-love:before {
+    content: "\f111";
+}
+.icon-maps:before {
+    content: "\f112";
+}
+.icon-office:before {
+    content: "\f113";
+}
+.icon-phone:before {
+    content: "\f114";
+}
+.icon-pin:before {
+    content: "\f115";
+}
+.icon-resize:before {
+    content: "\f116";
+}
+.icon-ruler:before {
+    content: "\f117";
+}
+.icon-serch:before {
+    content: "\f118";
+}
+.icon-twitter:before {
+    content: "\f119";
+}
+.icon-villa:before {
+    content: "\f11a";
+}

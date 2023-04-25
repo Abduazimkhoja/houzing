@@ -1,0 +1,24 @@
+
+.icon-arrow {
+   display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+
+      background-color: #0061df;
+
+      font-size: 100px;
+
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      &::before {
+         height: 20px;
+         margin-bottom: auto;
+      
+      // height: 1px;
+   }
+}
