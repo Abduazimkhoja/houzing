@@ -16,13 +16,12 @@ class Intro extends React.Component {
       let introLength = this.state.data.length * 100;
       const slidePlus = () => {
          this.state.position == -introLength + 100
-         ?this.setState({ position: 0 })
-         : this.setState({ position: this.state.position - 100 });
-
+            ? this.setState({ position: 0 })
+            : this.setState({ position: this.state.position - 100 });
       };
       const slideMinus = () => {
          this.state.position === 0
-            ? this.setState({ position: -introLength + 100})
+            ? this.setState({ position: -introLength + 100 })
             : this.setState({ position: this.state.position + 100 });
       };
 
@@ -90,7 +89,7 @@ class Intro extends React.Component {
                                     <p className="intro__has">{area} Sq Ft</p>
                                  </div>
                               </div>
-                              <p className="intro__price">${price}/mo</p>
+                              <p className="intro__price">{price}</p>
                               <a
                                  href="#"
                                  className="intro__button button button-white"
@@ -107,16 +106,12 @@ class Intro extends React.Component {
                id="minus"
                className="slide__arrow slide__arrow-minus"
                onClick={slideMinus}
-            >
-               
-            </button>
+            ></button>
             <button
                id="plus"
                className="slide__arrow slide__arrow-plus"
                onClick={slidePlus}
-            >
-               
-            </button>
+            ></button>
          </div>
       );
    }

@@ -15,7 +15,6 @@ function App() {
          <Search/>
          <SearchFilter/>
          <Intro/>
-         <Search/>
          <Recommended/>
       </div>
    );
