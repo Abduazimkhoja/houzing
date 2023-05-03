@@ -39,37 +39,61 @@ class Recommended extends React.Component {
                         garages,
                         area,
                         image: { url, alt },
+                        countPhoto,
+                        countVideo,
                      }) => {
                         return (
                            <div className="card__wrap">
                               <div className="card__inner">
                                  <div className="card__images">
-                                    {/* <p className="card__featured">FEATURED</p>
-                                    <p className="card__sale">FOR SALE</p> */}
-                                    <img className="card__photo" src={url} alt={alt} />
-                                    <img className="card__user" src={`./img/user/user${id}.png`} alt="" />
+                                    <p className="card__featured">FEATURED</p>
+                                    <p className="card__sale">FOR SALE</p>
+                                    <img
+                                       className="card__photo"
+                                       src={url}
+                                       alt={alt}
+                                    />
+                                    <div className="card__quantity">
+                                       <Photo style={{ fill: "#fff" }} /> {countPhoto}
+                                       <Video style={{ fill: "#fff" }} /> {countVideo}
+                                    </div>
+                                    <img
+                                       className="card__user"
+                                       src={`./img/user/user${id}.png`}
+                                       alt=""
+                                    />
                                  </div>
                                  <div className="card__info">
-                                    <h4 className="card__title">{title}</h4>
-                                    <h5 className="card__subtitle">
-                                       {address}
-                                    </h5>
-                                    <div className="card__features">
-                                       <div className="card__has">
-                                          <Bed style={{ fill: "#696969" }} />
-                                          <p className="">{beds} beds</p>
-                                       </div>
-                                       <div className="card__has">
-                                          <Bath style={{ fill: "#696969" }} />
-                                          <p className="">{baths} Baths</p>
-                                       </div>
-                                       <div className="card__has">
-                                          <Garage style={{ fill: "#696969" }} />
-                                          <p className="">{garages} Garage</p>
-                                       </div>
-                                       <div className="card__has">
-                                          <Ruler style={{ fill: "#696969" }} />
-                                          <p className="">{area} Sq Ft</p>
+                                    <div className="card__text">
+                                       <h4 className="card__title">{title}</h4>
+                                       <h5 className="card__subtitle">
+                                          {address}
+                                       </h5>
+                                       <div className="card__features">
+                                          <div className="card__has">
+                                             <Bed style={{ fill: "#696969" }} />
+                                             <p className="">{beds} beds</p>
+                                          </div>
+                                          <div className="card__has">
+                                             <Bath
+                                                style={{ fill: "#696969" }}
+                                             />
+                                             <p className="">{baths} Baths</p>
+                                          </div>
+                                          <div className="card__has">
+                                             <Garage
+                                                style={{ fill: "#696969" }}
+                                             />
+                                             <p className="">
+                                                {garages} Garage
+                                             </p>
+                                          </div>
+                                          <div className="card__has">
+                                             <Ruler
+                                                style={{ fill: "#696969" }}
+                                             />
+                                             <p className="">{area} Sq Ft</p>
+                                          </div>
                                        </div>
                                     </div>
                                     <div className="card__bottom">
@@ -81,10 +105,14 @@ class Recommended extends React.Component {
                                        </div>
                                        <div className="card__button">
                                           <button className="card__fullscreen">
-                                          <Resize style={{ fill: "#696969" }} />
+                                             <Resize
+                                                style={{ fill: "#696969" }}
+                                             />
                                           </button>
                                           <button className="card__favorite">
-                                          <Favorite style={{ fill: "#696969" }} />
+                                             <Favorite
+                                                style={{ fill: "#696969" }}
+                                             />
                                           </button>
                                        </div>
                                     </div>

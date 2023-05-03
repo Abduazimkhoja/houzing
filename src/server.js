@@ -13,6 +13,8 @@ export const houseInfo = [
          url: "https://petrostroybaza.ru/wp-content/uploads/2020/05/ddivsr7r4i8.jpg",
          alt: "Современный 4-спальный дом с большим гаражом",
       },
+      countPhoto: 14,
+      countVideo: 3,
    },
    {
       id: 2,
@@ -28,6 +30,8 @@ export const houseInfo = [
          url: "https://metalloy.ru/wp-content/uploads/2022/12/full_wey4ew1s.jpg",
          alt: "Уютный 3-спальный коттедж с красивым садом",
       },
+      countPhoto: 8,
+      countVideo: 1,
    },
    {
       id: 3,
@@ -43,6 +47,8 @@ export const houseInfo = [
          url: "https://svistanet.com/wp-content/uploads/2018/09/krasivye_doma_foto_28.jpg",
          alt: "Классический 5-спальный дом с большой террасой",
       },
+      countPhoto: 24,
+      countVideo: 5,
    },
    {
       id: 4,
@@ -58,6 +64,8 @@ export const houseInfo = [
          url: "https://avatars.mds.yandex.net/i?id=f0c7c6f0968464d98508e132f3e0b945_l-3663589-images-thumbs&n=13",
          alt: "Минималистичный таунхаус с 3 спальнями",
       },
+      countPhoto: 12,
+      countVideo: 4,
    },
    {
       id: 5,
@@ -73,6 +81,8 @@ export const houseInfo = [
          url: "https://pershingtamilla.ru/wp-content/uploads/9/e/a/9ea30130cffefd085adae3fabaaaf297.jpeg",
          alt: "Роскошное шале с 6 спальнями и видом на горы",
       },
+      countPhoto: 9,
+      countVideo: 5,
    },
    {
       id: 6,
@@ -88,6 +98,8 @@ export const houseInfo = [
          url: "https://anvizbiometric.ru/wp-content/uploads/8/0/a/80a68db88d953f6c729157f9daf4c2ff.jpeg",
          alt: "Белый островной дом с 4 спальнями и бассейном",
       },
+      countPhoto: 17,
+      countVideo: 3,
    },
    {
       id: 7,
@@ -118,6 +130,8 @@ export const houseInfo = [
          url: "https://pershingtamilla.ru/wp-content/uploads/8/a/4/8a48f6da747cbe4ded27ab3a94471fca.jpeg",
          alt: "Скандинавский лофт с 4 спальнями и просторной террасой",
       },
+      countPhoto: 14,
+      countVideo: 1,
    },
 ];
 

@@ -39,6 +39,7 @@ class Intro extends React.Component {
                   garages,
                   area,
                   image: { url, alt },
+                  
                }) => {
                   return (
                      <>
