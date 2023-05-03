@@ -1,16 +1,15 @@
-.container {
-   max-width: 1180px;
-   margin: auto;
-}
-
 .button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
    font-family: "Montserrat", sans-serif;
    height: 44px;
    border-radius: 2px;
    font-weight: 400;
    font-size: 14px;
    background: none;
-   font-size: 14px;
+
    &-gray {
       border: 1px solid #0d263b;
       color: #0d263b;
@@ -27,16 +26,6 @@
          background: #0051ba;
       }
    }
-
-   &-bd-blue {
-      border: 1px solid #0061df;
-      color: #0061df;
-      &:hover {
-         background: #0061df;
-         color: #fff;
-      }
-   }
-
    &-border-gray {
       border: 1px solid #e6e9ec;
       color: #0d263b;
@@ -54,10 +43,8 @@
    }
    &-gray,
    &-blue,
-   &-bd-blue,
    &-border-gray,
    &-white {
-      font-size: 14px;
       transition: background ease 0.3s, color ease 0.3s;
       -webkit-transition: background ease 0.3s, color ease 0.3s;
       -moz-transition: background ease 0.3s, color ease 0.3s;
@@ -68,37 +55,32 @@
       }
    }
 }
-
-.input {
-   &-gray {
-      width: 200px;
-      height: 44px;
-      padding: 0 16px;
-      
-      border: 1px solid #e6e9ec;
-      border-radius: 2px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -o-border-radius: 2px;
-      &:focus {
-         border-color: #676767;
-      }
+// interaction
+// social
+.social {
+   display: inline-block;
+   width: 36px;
+   height: 36px;
+   border-radius: 3px;
+   transition: background ease 0.3s, opacity ease 0.3s;
+   -webkit-transition: background ease 0.3s, opacity ease 0.3s;
+   -moz-transition: background ease 0.3s, opacity ease 0.3s;
+   -ms-transition: background ease 0.3s, opacity ease 0.3s;
+   -o-transition: background ease 0.3s, opacity ease 0.3s;
+   
+   &:hover {
+      opacity: 0.1;
+      background: #fff;
    }
-   &-blue {
-      padding-bottom: 4px;
-      border-bottom: 2px solid #E6E9EC;
-      &:hover {
-         border-color: #0061df3e;
-      }
-      &:focus {
-         border-color: #0061DF;
-         color: #0d263b;
-      }
+   &:active {
+      font-weight: 600;
    }
-   &-gray,
-   &-blue {
-      text-transform: capitalize;
+   &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
       font-size: 14px;
+      color: #fff;
    }
 }

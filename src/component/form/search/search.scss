@@ -1,0 +1,62 @@
+.search {
+   width: 100%;
+   padding: 10px;
+
+   background-color: #fff;
+
+   &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+   }
+
+   &__form {
+      display: flex;
+      flex: 1 1 0;
+      &:hover {
+        outline: 1px solid #0061df;
+      }
+   }
+
+   &__input {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1 1 0;
+      & input {
+         height: 100%;
+         display: flex;
+         flex: 1 0 0;
+      }
+
+      & i {
+         font-size: 35px;
+         color: #0061df;
+      }
+   }
+
+   &__buttons {
+      display: flex;
+      gap: 20px;
+   }
+   &__button {
+      &-advanced {
+         &:hover i {
+            color: #fff;
+         }
+         width: 130px;
+         & i {
+            font-size: 35px;
+            color: #0061df;
+         }
+      }
+      &-search {
+         width: 180px;
+         & i {
+            font-size: 30px;
+            color: #fff;
+         }
+      }
+   }
+}

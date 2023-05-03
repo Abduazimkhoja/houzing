@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.eot?1dd437c8dd08949840ef355e59c36cac#iefix") format("embedded-opentype"),
-url("./icons.woff2?1dd437c8dd08949840ef355e59c36cac") format("woff2"),
-url("./icons.woff?1dd437c8dd08949840ef355e59c36cac") format("woff");
+    src: url("./icons.eot?49a7fb09759e5def3d73c63cb05fede5#iefix") format("embedded-opentype"),
+url("./icons.woff2?49a7fb09759e5def3d73c63cb05fede5") format("woff2"),
+url("./icons.woff?49a7fb09759e5def3d73c63cb05fede5") format("woff");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -10,7 +10,6 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
-    
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -23,75 +22,66 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-arrow:before {
     content: "\f102";
 }
-.icon-bed:before {
+.icon-calculate:before {
     content: "\f103";
 }
-.icon-calculator:before {
+.icon-discord:before {
     content: "\f104";
 }
-.icon-car:before {
+.icon-facebook:before {
     content: "\f105";
 }
-.icon-discord:before {
+.icon-favorite:before {
     content: "\f106";
 }
-.icon-email:before {
+.icon-filter:before {
     content: "\f107";
 }
-.icon-facebook:before {
+.icon-fullscreen:before {
     content: "\f108";
 }
-.icon-filter:before {
+.icon-home:before {
     content: "\f109";
 }
-.icon-Group:before {
+.icon-house:before {
     content: "\f10a";
 }
-.icon-home:before {
+.icon-in:before {
     content: "\f10b";
 }
-.icon-house:before {
+.icon-instagram:before {
     content: "\f10c";
 }
-.icon-houzing:before {
+.icon-location:before {
     content: "\f10d";
 }
-.icon-in:before {
+.icon-loupe:before {
     content: "\f10e";
 }
-.icon-instagram:before {
+.icon-mail:before {
     content: "\f10f";
 }
-.icon-loupe:before {
+.icon-map:before {
     content: "\f110";
 }
-.icon-love:before {
+.icon-office:before {
     content: "\f111";
 }
-.icon-maps:before {
+.icon-phone:before {
     content: "\f112";
 }
-.icon-office:before {
+.icon-serch:before {
     content: "\f113";
 }
-.icon-phone:before {
+.icon-twitter:before {
     content: "\f114";
 }
-.icon-pin:before {
+.icon-villa:before {
     content: "\f115";
 }
-.icon-resize:before {
-    content: "\f116";
-}
-.icon-ruler:before {
-    content: "\f117";
-}
-.icon-serch:before {
-    content: "\f118";
-}
-.icon-twitter:before {
-    content: "\f119";
-}
-.icon-villa:before {
-    content: "\f11a";
+
+.icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
