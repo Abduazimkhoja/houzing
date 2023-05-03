@@ -6,7 +6,7 @@ import SearchFilter from "./component/form/filter/SearchFilter"
 import Header from "./component/header/Header"
 import Search from './component/form/search/Search'
 import Intro from "./component/intro/Intro";
-
+import Recommended from "./component/recommended";
 
 function App() {
    return (
@@ -16,6 +16,7 @@ function App() {
          <SearchFilter/>
          <Intro/>
          <Search/>
+         <Recommended/>
       </div>
    );
 }
