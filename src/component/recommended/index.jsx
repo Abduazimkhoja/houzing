@@ -15,11 +15,24 @@ class Recommended extends React.Component {
       super(props);
       this.state = {
          data: houseInfo,
+         fullImageUrl: "",
       };
    }
    render() {
+      const fullScreeImage = React.createRef()
+
+      const fullPhoto = (id) => { 
+         this.setState({
+            fullImageUrl: this.state.data[id-1].image.url
+         })
+         fullScreeImage.current.style.cssText = `transform: scale(1)`
+      }
+      const closeFullImage = () => {
+         fullScreeImage.current.style.cssText = `transform: scale(0)`
+      }
       return (
          <div className="recommended">
+            <img ref={fullScreeImage} onClick={closeFullImage} className="image-full" src={this.state.fullImageUrl} alt="" />
             <div className="container">
                <h3 className="title">Recommended</h3>
                <h4 className="subtitle">
@@ -49,6 +62,7 @@ class Recommended extends React.Component {
                                     <p className="card__featured">FEATURED</p>
                                     <p className="card__sale">FOR SALE</p>
                                     <img
+                                    
                                        className="card__photo"
                                        src={url}
                                        alt={alt}
@@ -104,7 +118,7 @@ class Recommended extends React.Component {
                                           <p className="card__price">{price}</p>
                                        </div>
                                        <div className="card__button">
-                                          <button className="card__fullscreen">
+                                          <button className="card__fullscreen" onClick={() => fullPhoto(id)}>
                                              <Resize
                                                 style={{ fill: "#696969" }}
                                              />

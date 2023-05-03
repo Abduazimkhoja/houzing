@@ -1,3 +1,14 @@
+.image-full {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 2;
+   transform: scale(0);
+   transition: transform .5s ease;
+}
+
 .recommended {
    margin: 100px 0 50px 0;
 
@@ -30,7 +41,7 @@
    &__images {
       position: relative;
       &:hover .card__quantity {
-         display: flex;
+         transform: scale(1);
       }
    }
 
@@ -74,7 +85,7 @@
    }
 
    &__quantity {
-      display: none;
+      display: flex;
       align-items: center;
       gap: 10px;
 
@@ -87,6 +98,8 @@
       font-size: 12px;
 
       color: #fff;
+      transform: scale(1, 0);
+      transition: transform .2s ease-in;
    }
 
    &__user {
