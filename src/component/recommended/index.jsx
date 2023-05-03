@@ -9,6 +9,8 @@ import { ReactComponent as Resize } from "../../assets/icon/resize.svg";
 import { ReactComponent as Favorite } from "../../assets/icon/favorite.svg";
 import { ReactComponent as Video } from "../../assets/icon/video.svg";
 import { ReactComponent as Photo } from "../../assets/icon/photo.svg";
+import { ReactComponent as ArrowLeft } from "../../assets/icon/arrow-left.svg";
+import { ReactComponent as ArrowRight } from "../../assets/icon/arrow-right.svg";
 
 class Recommended extends React.Component {
    constructor(props) {
@@ -16,23 +18,49 @@ class Recommended extends React.Component {
       this.state = {
          data: houseInfo,
          fullImageUrl: "",
+         position: 0,
       };
    }
    render() {
-      const fullScreeImage = React.createRef()
+      const fullScreeImage = React.createRef();
+      const cardWrap = React.createRef();
 
-      const fullPhoto = (id) => { 
+      const slidePlus = () => {
+         let cardWidth = cardWrap.current.clientWidth;
+         let cardLength = this.state.data.length * cardWidth;
+
+         this.state.position == -cardLength + cardWidth * 3
+            ? this.setState({ position: 0 })
+            : this.setState({ position: this.state.position - cardWidth });
+      };
+      const slideMinus = () => {
+         let cardWidth = cardWrap.current.clientWidth;
+         let cardLength = this.state.data.length * cardWidth;
+
+         this.state.position === 0
+            ? this.setState({ position: -cardLength + cardWidth * 3 })
+            : this.setState({ position: this.state.position + cardWidth });
+      };
+
+      const fullPhoto = (id) => {
          this.setState({
-            fullImageUrl: this.state.data[id-1].image.url
-         })
-         fullScreeImage.current.style.cssText = `transform: scale(1)`
-      }
+            fullImageUrl: this.state.data[id - 1].image.url,
+         });
+         fullScreeImage.current.style.cssText = `transform: scale(1)`;
+      };
       const closeFullImage = () => {
-         fullScreeImage.current.style.cssText = `transform: scale(0)`
-      }
+         fullScreeImage.current.style.cssText = `transform: scale(0)`;
+      };
       return (
          <div className="recommended">
-            <img ref={fullScreeImage} onClick={closeFullImage} className="image-full" src={this.state.fullImageUrl} alt="" />
+            <img
+               ref={fullScreeImage}
+               onClick={closeFullImage}
+               className="image-full"
+               src={this.state.fullImageUrl}
+               alt=""
+            />
+
             <div className="container">
                <h3 className="title">Recommended</h3>
                <h4 className="subtitle">
@@ -56,20 +84,27 @@ class Recommended extends React.Component {
                         countVideo,
                      }) => {
                         return (
-                           <div className="card__wrap">
+                           <div
+                              ref={cardWrap}
+                              className="card__wrap"
+                              style={{
+                                 transform: `translateX(${this.state.position}px)`,
+                              }}
+                           >
                               <div className="card__inner">
                                  <div className="card__images">
                                     <p className="card__featured">FEATURED</p>
                                     <p className="card__sale">FOR SALE</p>
                                     <img
-                                    
                                        className="card__photo"
                                        src={url}
                                        alt={alt}
                                     />
                                     <div className="card__quantity">
-                                       <Photo style={{ fill: "#fff" }} /> {countPhoto}
-                                       <Video style={{ fill: "#fff" }} /> {countVideo}
+                                       <Photo style={{ fill: "#fff" }} />{" "}
+                                       {countPhoto}
+                                       <Video style={{ fill: "#fff" }} />{" "}
+                                       {countVideo}
                                     </div>
                                     <img
                                        className="card__user"
@@ -118,7 +153,10 @@ class Recommended extends React.Component {
                                           <p className="card__price">{price}</p>
                                        </div>
                                        <div className="card__button">
-                                          <button className="card__fullscreen" onClick={() => fullPhoto(id)}>
+                                          <button
+                                             className="card__fullscreen"
+                                             onClick={() => fullPhoto(id)}
+                                          >
                                              <Resize
                                                 style={{ fill: "#696969" }}
                                              />
@@ -138,6 +176,18 @@ class Recommended extends React.Component {
                   )}
                </div>
             </div>
+            <button
+               onClick={slidePlus}
+               className="recommended__button recommended__button-plus"
+            >
+               <ArrowRight style={{ fill: "#0D263B" }} />
+            </button>
+            <button
+               onClick={slideMinus}
+               className="recommended__button recommended__button-minus"
+            >
+               <ArrowLeft style={{ fill: "#0D263B" }} />
+            </button>
          </div>
       );
    }

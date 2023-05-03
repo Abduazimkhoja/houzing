@@ -76,10 +76,15 @@
       top: 50%;
       transform: translateY(-50%);
 
-      color: #fff;
-      background: #ffffff;
-      opacity: 0.2;
+      background: #ffffff40;
       border-radius: 50%;
+
+      &:hover {
+         background: #ffffff69;
+      }
+      &:active {
+         background: #ffffff40;
+      }
 
       &-plus {
          right: 20px;

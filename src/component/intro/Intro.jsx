@@ -1,6 +1,8 @@
 import React from "react";
 import "./intro.scss";
 import { houseInfo } from "../../server";
+import { ReactComponent as ArrowLeft } from "../../assets/icon/arrow-left.svg";
+import { ReactComponent as ArrowRight } from "../../assets/icon/arrow-right.svg";
 
 class Intro extends React.Component {
    constructor(props) {
@@ -39,7 +41,6 @@ class Intro extends React.Component {
                   garages,
                   area,
                   image: { url, alt },
-                  
                }) => {
                   return (
                      <>
@@ -107,12 +108,16 @@ class Intro extends React.Component {
                id="minus"
                className="slide__arrow slide__arrow-minus"
                onClick={slideMinus}
-            ></button>
+            >
+               <ArrowLeft style={{ fill: "#ffffff" }} />
+            </button>
             <button
                id="plus"
                className="slide__arrow slide__arrow-plus"
                onClick={slidePlus}
-            ></button>
+            >
+               <ArrowRight style={{ fill: "#ffffff" }} />
+            </button>
          </div>
       );
    }
