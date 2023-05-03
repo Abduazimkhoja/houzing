@@ -21,8 +21,8 @@ class Recommended extends React.Component {
       return (
          <div className="recommended">
             <div className="container">
-               <h3 className="recommended__title">Recommended</h3>
-               <h4 className="recommended__subtitle">
+               <h3 className="title">Recommended</h3>
+               <h4 className="subtitle">
                   Nulla quis curabitur velit volutpat auctor bibendum
                   consectetur sit.
                </h4>
