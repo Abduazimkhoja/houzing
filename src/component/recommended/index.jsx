@@ -1,16 +1,18 @@
 import React from "react";
 import "./recommended.scss";
 import { houseInfo } from "../../server";
-import { ReactComponent as Bed } from "../../assets/icon/bed.svg";
-import { ReactComponent as Bath } from "../../assets/icon/bath.svg";
-import { ReactComponent as Garage } from "../../assets/icon/car.svg";
-import { ReactComponent as Ruler } from "../../assets/icon/ruler.svg";
-import { ReactComponent as Resize } from "../../assets/icon/resize.svg";
-import { ReactComponent as Favorite } from "../../assets/icon/favorite.svg";
-import { ReactComponent as Video } from "../../assets/icon/video.svg";
-import { ReactComponent as Photo } from "../../assets/icon/photo.svg";
-import { ReactComponent as ArrowLeft } from "../../assets/icon/arrow-left.svg";
-import { ReactComponent as ArrowRight } from "../../assets/icon/arrow-right.svg";
+import {
+   Bed,
+   Bath,
+   Garage,
+   Ruler,
+   Resize,
+   Favorite,
+   Video,
+   Photo,
+   ArrowLeft,
+   ArrowRight,
+} from "../../assets/icon/svg";
 
 class Recommended extends React.Component {
    constructor(props) {

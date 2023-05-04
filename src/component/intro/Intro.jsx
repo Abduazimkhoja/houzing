@@ -1,8 +1,7 @@
 import React from "react";
 import "./intro.scss";
 import { houseInfo } from "../../server";
-import { ReactComponent as ArrowLeft } from "../../assets/icon/arrow-left.svg";
-import { ReactComponent as ArrowRight } from "../../assets/icon/arrow-right.svg";
+import { ArrowLeft, ArrowRight } from "../../assets/icon/svg";
 
 class Intro extends React.Component {
    constructor(props) {

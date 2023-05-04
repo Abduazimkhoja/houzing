@@ -74,7 +74,7 @@
       width: 200px;
       height: 44px;
       padding: 0 16px;
-      
+
       border: 1px solid #e6e9ec;
       border-radius: 2px;
       -webkit-border-radius: 2px;
@@ -87,12 +87,12 @@
    }
    &-blue {
       padding-bottom: 4px;
-      border-bottom: 2px solid #E6E9EC;
+      border-bottom: 2px solid #e6e9ec;
       &:hover {
          border-color: #0061df3e;
       }
       &:focus {
-         border-color: #0061DF;
+         border-color: #0061df;
          color: #0d263b;
       }
    }
@@ -103,19 +103,18 @@
    }
 }
 
-
 .title {
    margin-bottom: 8px;
 
-      font-weight: 600;
-      font-size: 28px;
-      letter-spacing: -0.02em;
-      text-align: center;
-      color: #0d263b;
+   font-weight: 600;
+   font-size: 28px;
+   letter-spacing: -0.02em;
+   text-align: center;
+   color: #0d263b;
 }
 
 .subtitle {
-   margin-bottom: 32px;
+   margin-bottom: 40px;
 
    font-weight: 400;
    font-size: 16px;
