@@ -8,6 +8,7 @@ import Search from "./component/form/search/Search";
 import Intro from "./component/intro/Intro";
 import Recommended from "./component/recommended";
 import Reliability from "./component/reliability";
+import Category from "./component/category";
 
 function App() {
    return (
@@ -18,6 +19,7 @@ function App() {
          <Intro />
          <Recommended />
          <Reliability />
+         <Category/>
       </div>
    );
 }

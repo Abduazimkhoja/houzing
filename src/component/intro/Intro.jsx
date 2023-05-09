@@ -42,64 +42,59 @@ class Intro extends React.Component {
                   image: { url, alt },
                }) => {
                   return (
-                     <>
-                        <div
-                           className="intro__wrap"
-                           style={{
-                              // backgroundImage: `url(${url}) center / cover no-repeat`,
-                              backgroundImage: `linear-gradient(#000000cf,#000000ab),url(${url})`,
-                              transform: `translateX(${this.state.position}vw)`,
-                           }}
-                        >
-                           <div className="intro__text">
-                              <h2 className="intro__title">{title}</h2>
-                              <h4 className="intro__subtitle">{address}</h4>
-                              <div className="intro__features">
-                                 <div className="intro__block">
-                                    <img
-                                       src="./img/features/bed.svg"
-                                       alt=""
-                                       className="intro__icon"
-                                    />
-                                    <p className="intro__has">{beds} beds</p>
-                                 </div>
-                                 <div className="intro__block">
-                                    <img
-                                       src="./img/features/bath.svg"
-                                       alt=""
-                                       className="intro__icon"
-                                    />
-                                    <p className="intro__has">{baths} Baths</p>
-                                 </div>
-                                 <div className="intro__block">
-                                    <img
-                                       src="./img/features/car.svg"
-                                       alt=""
-                                       className="intro__icon"
-                                    />
-                                    <p className="intro__has">
-                                       {garages} Garage
-                                    </p>
-                                 </div>
-                                 <div className="intro__block">
-                                    <img
-                                       src="./img/features/ruler.svg"
-                                       alt=""
-                                       className="intro__icon"
-                                    />
-                                    <p className="intro__has">{area} Sq Ft</p>
-                                 </div>
+                     <div
+                        className="intro__wrap"
+                        style={{
+                           backgroundImage: `linear-gradient(#000000cf,#000000ab),url(${url})`,
+                           transform: `translateX(${this.state.position}vw)`,
+                        }}
+                     >
+                        <div className="intro__text">
+                           <h2 className="intro__title">{title}</h2>
+                           <h4 className="intro__subtitle">{address}</h4>
+                           <div className="intro__features">
+                              <div className="intro__block">
+                                 <img
+                                    src="./img/features/bed.svg"
+                                    alt=""
+                                    className="intro__icon"
+                                 />
+                                 <p className="intro__has">{beds} beds</p>
                               </div>
-                              <p className="intro__price">{price}</p>
-                              <a
-                                 href="#"
-                                 className="intro__button button button-white"
-                              >
-                                 Read more
-                              </a>
+                              <div className="intro__block">
+                                 <img
+                                    src="./img/features/bath.svg"
+                                    alt=""
+                                    className="intro__icon"
+                                 />
+                                 <p className="intro__has">{baths} Baths</p>
+                              </div>
+                              <div className="intro__block">
+                                 <img
+                                    src="./img/features/car.svg"
+                                    alt=""
+                                    className="intro__icon"
+                                 />
+                                 <p className="intro__has">{garages} Garage</p>
+                              </div>
+                              <div className="intro__block">
+                                 <img
+                                    src="./img/features/ruler.svg"
+                                    alt=""
+                                    className="intro__icon"
+                                 />
+                                 <p className="intro__has">{area} Sq Ft</p>
+                              </div>
                            </div>
+                           <p className="intro__price">{price}</p>
+                           <a
+                              href="#"
+                              className="intro__button button button-white"
+                           >
+                              Read more
+                           </a>
                         </div>
-                     </>
+                     </div>
                   );
                }
             )}
