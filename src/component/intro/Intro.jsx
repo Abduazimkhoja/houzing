@@ -43,6 +43,7 @@ class Intro extends React.Component {
                }) => {
                   return (
                      <div
+                        key={id}
                         className="intro__wrap"
                         style={{
                            backgroundImage: `linear-gradient(#000000cf,#000000ab),url(${url})`,
