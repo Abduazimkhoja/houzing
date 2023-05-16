@@ -87,6 +87,7 @@ class Recommended extends React.Component {
                      }) => {
                         return (
                            <div
+                              key={id}
                               ref={cardWrap}
                               className="card__wrap"
                               style={{
