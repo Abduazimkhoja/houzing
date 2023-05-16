@@ -44,7 +44,7 @@ export const houseInfo = [
       garages: 3,
       area: 350,
       image: {
-         url: "https://svistanet.com/wp-content/uploads/2018/09/krasivye_doma_foto_28.jpg",
+         url: "https://sjthemes.com/wp-content/uploads/2020/10/2-9-1024x576.jpg",
          alt: "Классический 5-спальный дом с большой террасой",
       },
       countPhoto: 24,
